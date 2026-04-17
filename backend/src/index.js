@@ -7,45 +7,55 @@ import { sendContactEmail } from './mailer.js';
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Allow localhost in dev and the real frontend URL in production
+// ── Allowed origins (frontend URLs) ──
 const allowedOrigins = [
-  'https://portfolio-1-bosg.onrender.com'
-  'http://localhost:5173',
-  'http://localhost:4173', // vite preview
-  process.env.FRONTEND_URL,  // set this in production e.g. https://yoursite.onrender.com
+  process.env.FRONTEND_URL, // set in Render/Vercel env
+  'http://localhost:3000',  // local dev
 ].filter(Boolean);
 
+// ── CORS CONFIG ──
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests with no origin (curl, Postman, server-to-server)
+      // Allow server-to-server or Postman requests
       if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) return callback(null, true);
-      callback(new Error(`CORS blocked: ${origin}`));
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      console.error(`CORS blocked request from: ${origin}`);
+      return callback(new Error(`CORS blocked: ${origin}`));
     },
+    credentials: true, // optional (only needed if using cookies/auth)
   })
 );
+
+// ── Middleware ──
 app.use(express.json());
 
-// ── GET /api/portfolio ── returns all portfolio data
+// ── Routes ──
+
+// GET full portfolio data
 app.get('/api/portfolio', (req, res) => {
   res.json(portfolioData);
 });
 
-// ── GET /api/projects ── returns just projects
+// GET projects
 app.get('/api/projects', (req, res) => {
   res.json(portfolioData.projects);
 });
 
-// ── GET /api/experience ── returns work experience
+// GET experience
 app.get('/api/experience', (req, res) => {
   res.json(portfolioData.experience);
 });
 
-// ── POST /api/contact ── handles contact form submissions
+// Contact form API
 app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
+  // validation
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'All fields are required.' });
   }
@@ -57,15 +67,25 @@ app.post('/api/contact', async (req, res) => {
 
   try {
     await sendContactEmail({ name, email, message });
-    res.json({ success: true, message: 'Message sent successfully!' });
+
+    return res.json({
+      success: true,
+      message: 'Message sent successfully!',
+    });
   } catch (err) {
     console.error('Email error:', err);
-    // Still log it server-side even if email fails
-    console.log(`Contact form submission from ${name} <${email}>: ${message}`);
-    res.json({ success: true, message: 'Message received!' });
+
+    // fallback (still accept message even if email fails)
+    console.log(`Contact form: ${name} <${email}> - ${message}`);
+
+    return res.json({
+      success: true,
+      message: 'Message received!',
+    });
   }
 });
 
+// ── Start server ──
 app.listen(PORT, () => {
-  console.log(`Backend running at http://localhost:${PORT}`);
+  console.log(`Backend running on port ${PORT}`);
 });
