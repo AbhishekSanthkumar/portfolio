@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 // Allow localhost in dev and the real frontend URL in production
 const allowedOrigins = [
+  'https://portfolio-1-bosg.onrender.com'
   'http://localhost:5173',
   'http://localhost:4173', // vite preview
   process.env.FRONTEND_URL,  // set this in production e.g. https://yoursite.onrender.com
