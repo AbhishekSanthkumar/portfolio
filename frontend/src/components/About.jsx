@@ -15,6 +15,12 @@ export default function About({ hero, education }) {
             neural network architectures. Whether it's shipping a full-stack product or running a
             training pipeline, I care about code that's clean, scalable, and reliable.
           </p>
+          <p className="text-muted font-light leading-relaxed">I enjoy solving complex problems, 
+            learning new technologies, and building impactful software products. I thrive in 
+            collaborative environments and love working on projects that blend creativity with 
+            engineering. My goal is to secure internships and full-time opportunities where I 
+            can apply my technical skills, contribute to innovative solutions, and continue 
+            growing as a software engineer.</p>
         </div>
 
         {/* Education + Stats */}
