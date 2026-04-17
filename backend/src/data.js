@@ -7,7 +7,7 @@ export const portfolioData = {
     location: "Albany, NY",
     email: "abhishek.santha1802@gmail.com",
     linkedin: "https://www.linkedin.com/in/abhishek-santhakumar",
-    resumeUrl: "https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:e52e91c0-22f8-4890-acd9-339cd0118596",
+    resumeUrl: "https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:4fd1fcff-2232-4b04-97fb-01a908490f80",
   },
 
   skills: [
