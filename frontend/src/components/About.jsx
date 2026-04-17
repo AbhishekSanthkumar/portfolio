@@ -10,17 +10,16 @@ export default function About({ hero, education }) {
         {/* Bio */}
         <div>
           <p className="text-muted text-lg font-light leading-relaxed mb-6">{hero.bio}</p>
-          <p className="text-muted font-light leading-relaxed">
+          <p className="text-muted font-light leading-relaxed mb-6">
             I'm driven by a deep curiosity for how systems work from distributed backends to
             neural network architectures. Whether it's shipping a full-stack product or running a
-            training pipeline, I care about code that's clean, scalable, and reliable.
-          </p>
-          <p className="text-muted font-light leading-relaxed">
-            I enjoy solving complex problems, learning new technologies, and building impactful 
-            software products. I thrive in collaborative environments and love working on projects 
-            that blend creativity with engineering. My goal is to secure internships and full-time 
+            training pipeline, I care about code that's clean, scalable, and reliable. I enjoy 
+            solving complex problems, learning new technologies, and building impactful software
+            products. I thrive in collaborative environments and love working on projects that 
+            blend creativity with engineering. My goal is to secure internships and full-time 
             opportunities where I can apply my technical skills, contribute to innovative solutions, 
-            and continue growing as a software engineer.</p>
+            and continue growing as a software engineer.
+          </p>
         </div>
 
         {/* Education + Stats */}
