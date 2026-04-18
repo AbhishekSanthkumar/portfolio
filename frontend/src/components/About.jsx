@@ -33,7 +33,6 @@ export default function About({ hero, education }) {
                 <div>
                   <p className="font-medium text-sm text-white mb-0.5">{edu.school}</p>
                   <p className="text-muted text-sm">{edu.degree}</p>
-                  <p className="text-muted text-sm  ">{edu.cgpa}</p>
                   {edu.note && (
                     <span className="inline-block mt-2 text-xs bg-accent/10 text-accent border border-accent/20 px-2.5 py-0.5 rounded-full">
                       {edu.note}
