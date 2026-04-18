@@ -143,14 +143,12 @@ export const portfolioData = {
       degree: "Master of Science, Computer Science",
       school: "State University of New York, Albany",
       period: "Aug 2024 – May 2026",
-      note: "Dean's Merit Scholarship",
-      cgpa: "3.25/4"
+      note: "Dean's Merit Scholarship"
     },
     {
       degree: "Bachelor of Engineering, Computer Science",
       school: "Rajalakshmi Institute of Technology",
-      period: "Aug 2019 – May 2023",
-      cgpa: "8.09/10"
+      period: "Aug 2019 – May 2023"
     },
   ],
 };
