@@ -117,8 +117,8 @@ export const portfolioData = {
       company: "L&T Technology Services",
       period: "Jul 2023 – Jun 2024",
       bullets: [
-        "Automated 180+ test cases for Intel's DTAF networking framework, enabling end-to-end validation.",
         "Developed Selenium automation components using POM, TestNG, and Data-Driven approaches.",
+        "Updated Requirement Traceability Matrix (RTM) and ensured alignment between requirements",
         "Created and maintained Docker Compose files to containerize test environments.",
         "Used JIRA for defect tracking and Git for collaborative version control.",
       ],
