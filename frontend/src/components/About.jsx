@@ -7,18 +7,39 @@ export default function About({ hero, education }) {
       <h2 className="font-syne font-bold text-4xl tracking-tight mb-14">Who I am</h2>
 
       <div className="grid md:grid-cols-2 gap-16 items-start">
-        {/* Bio */}
+        {/* Bio + photo */}
         <div>
+          {/* Small inline photo for About section */}
+          <div className="flex items-center gap-5 mb-7">
+            <div
+              className="overflow-hidden flex-shrink-0"
+              style={{
+                width: 72,
+                height: 72,
+                borderRadius: '50%',
+                border: '2px solid rgba(124,106,247,0.35)',
+              }}
+            >
+              <img
+                src="/abhishek_profile.jpg"
+                alt="Abhishek Santhakumar"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+              />
+            </div>
+            <div>
+              <p className="font-syne font-bold text-lg">{hero.name}</p>
+              <p className="text-muted text-sm">{hero.tagline || 'Software Engineer · Albany, NY'}</p>
+            </div>
+          </div>
+
           <p className="text-muted text-lg font-light leading-relaxed mb-6">{hero.bio}</p>
-          <p className="text-muted font-light leading-relaxed mb-6">
+          <p className="text-muted font-light leading-relaxed">
             I'm driven by a deep curiosity for how systems work from distributed backends to
             neural network architectures. Whether it's shipping a full-stack product or running a
             training pipeline, I care about code that's clean, scalable, and reliable. I enjoy 
             solving complex problems, learning new technologies, and building impactful software
             products. I thrive in collaborative environments and love working on projects that 
-            blend creativity with engineering. My goal is to secure internships and full-time 
-            opportunities where I can apply my technical skills, contribute to innovative solutions, 
-            and continue growing as a software engineer.
+            blend creativity with engineering. 
           </p>
         </div>
 
