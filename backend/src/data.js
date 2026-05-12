@@ -68,13 +68,14 @@ export const portfolioData = {
     },
     {
       id: 3,
-      title: "Social Media Analytics Dashboard",
+      title: "AI Code Review System:",
       description:
-        "An analytics dashboard that processes large-scale social media datasets, performs sentiment analysis, and surfaces actionable trends through interactive visualizations.",
+        "An AI-powered GitHub App that automatically reviews pull requests, flags security vulnerabilities, suggests architectural improvements, and posts inline comments all within seconds of a PR being opened.",
       bullets: [
-        "Processed large-scale social media datasets and ran sentiment analysis using NLP.",
-        "Created interactive Power BI dashboards to identify trends, user behavior, and viral patterns.",
-        "Tracked engagement metrics to support data-driven decisions.",
+        "Built and deployed a production GitHub App on Railway that auto-reviews PRs via Claude Sonnet detecting SQL injection, hardcoded credentials, shell injections, and architectural/quality issues within seconds.",
+        "Smart filters skip lock files, minified assets, and draft/bot PRs, with failure comments guaranteeing developer feedback.",
+        "Engineered the full backend stack: FastAPI + Uvicorn webhook server with HMAC-SHA256 verification, SQLite-backed idempotency, and background queuing for duplicate-free retry handling.",
+        "Multi-stage pipeline (github_client.py → reviewer.py → comment_poster.py) covering JWT/RSA auth, paginated diff fetching, prompt construction, JSON parsing, and exact diff-line inline comments; base64-encoded secrets managed via Railway.",
       ],
       stack: ["Python", "Power BI", "NLP", "Pandas"],
       type: "Data & Visualization",
