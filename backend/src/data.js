@@ -44,10 +44,10 @@ export const portfolioData = {
       description:
         "Designed and trained multi-layer neural networks for classification tasks across structured and unstructured datasets, achieving 15–25% performance gains through rigorous tuning.",
       bullets: [
-        "Improved model accuracy by 15–25% via hyperparameter tuning (learning rate, batch size) and regularization (L1/L2, dropout, early stopping).",
-        "Built evaluation pipelines using precision, recall, F1-score, and confusion matrices to ensure generalization.",
-        "Reduced overfitting via cross-validation and learning curve analysis.",
-      ],
+        "Modeled multi-layer neural networks using Python and TensorFlow/Keras for classification across structured and unstructured datasets.",
+        "Improved model performance by ~15–25% through hyperparameter tuning (learning rate, batch size) and regularization techniques (L1/L2, dropout, early stopping).",
+        "Engineered robust evaluation pipelines using precision, recall, F1-score, and confusion matrices to ensure model generalization.",
+        "Reduced overfitting and improved validation stability by implementing cross-validation and learning curve analysis"],
       stack: ["Python", "TensorFlow", "Keras", "Scikit-learn"],
       type: "ML / AI",
       github: "#",
@@ -58,9 +58,9 @@ export const portfolioData = {
       description:
         "A scalable full-stack e-commerce platform with secure authentication, product management, and order processing — built to handle real concurrent traffic.",
       bullets: [
-        "Designed secure RESTful APIs for auth, product management, and order processing.",
-        "Structured backend services for concurrent requests, improving responsiveness and scalability.",
-        "Optimized frontend with reusable React components and efficient state management.",
+        "Deployed a scalable full-stack e-commerce platform using React.js, Vite, Express, and MongoDB, supporting dynamic products browsing and user interactions.",
+        "Structured backend services to handle concurrent requests, improving application responsiveness and scalability.",
+        "Optimized frontend performance through reusable components and efficient state management, enhancing overall user experience.",
       ],
       stack: ["React.js", "TypeScript", "Express", "MongoDB", "Node.js"],
       type: "Full Stack",
@@ -77,9 +77,9 @@ export const portfolioData = {
         "Engineered the full backend stack: FastAPI + Uvicorn webhook server with HMAC-SHA256 verification, SQLite-backed idempotency, and background queuing for duplicate-free retry handling.",
         "Multi-stage pipeline (github_client.py → reviewer.py → comment_poster.py) covering JWT/RSA auth, paginated diff fetching, prompt construction, JSON parsing, and exact diff-line inline comments; base64-encoded secrets managed via Railway.",
       ],
-      stack: ["Python", "Power BI", "NLP", "Pandas"],
-      type: "Data & Visualization",
-      github: "#",
+      stack: ["Python", "FastAPI", "Claude API", "GitHub Apps", "Railway"],
+      type: "AI & Developer Tools",
+      github: "#https://github.com/AbhishekSanthkumar/AI-Code-Review",
     },
     {
       id: 4,
