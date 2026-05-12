@@ -79,7 +79,7 @@ export const portfolioData = {
       ],
       stack: ["Python", "FastAPI", "Claude API", "GitHub Apps", "Railway"],
       type: "AI & Developer Tools",
-      github: "#https://github.com/AbhishekSanthkumar/AI-Code-Review",
+      github: "https://github.com/AbhishekSanthkumar/AI-Code-Review",
     },
     {
       id: 4,
