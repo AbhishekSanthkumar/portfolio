@@ -40,34 +40,6 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "Neural Networks for Classification",
-      description:
-        "Designed and trained multi-layer neural networks for classification tasks across structured and unstructured datasets, achieving 15–25% performance gains through rigorous tuning.",
-      bullets: [
-        "Modeled multi-layer neural networks using Python and TensorFlow/Keras for classification across structured and unstructured datasets.",
-        "Improved model performance by ~15–25% through hyperparameter tuning (learning rate, batch size) and regularization techniques (L1/L2, dropout, early stopping).",
-        "Engineered robust evaluation pipelines using precision, recall, F1-score, and confusion matrices to ensure model generalization.",
-        "Reduced overfitting and improved validation stability by implementing cross-validation and learning curve analysis"],
-      stack: ["Python", "TensorFlow", "Keras", "Scikit-learn"],
-      type: "AI",
-      github: "#",
-    },
-    {
-      id: 2,
-      title: "Graph Neural Network — Social Network Analysis",
-      description:
-        "Applied graph-based ML to analyze large-scale social networks, implementing link prediction and community detection algorithms on sparse graph data.",
-      bullets: [
-        "Implemented link prediction algorithms: Jaccard Index, Adamic/Adar, and Degree Product.",
-        "Performed community detection using label propagation on real-world social graphs.",
-        "Analyzed homophily patterns to understand user clustering behavior.",
-      ],
-      stack: ["Python", "NetworkX", "Graph ML", "NumPy"],
-      type: "ML / Graph",
-      github: "#",
-    },
-    {
-      id: 3,
       title: "AI Code Review System:",
       description:
         "An AI-powered GitHub App that automatically reviews pull requests, flags security vulnerabilities, suggests architectural improvements, and posts inline comments all within seconds of a PR being opened.",
@@ -82,7 +54,7 @@ export const portfolioData = {
       github: "https://github.com/AbhishekSanthkumar/AI-Code-Review",
     },
     {
-      id: 4,
+      id: 2,
       title: "AI-Powered Real-Time Monitoring System",
       description:
         "A real-time system monitoring platform that uses machine learning and AI to predict infrastructure failures before they happen. Instead of alerting after problems occur, this system analyzes patterns in metrics and forecasts issues hours in advance with human-readable explanations powered by Claude AI.",
@@ -95,6 +67,34 @@ export const portfolioData = {
       stack: ["Python", "FastAPI", "Redis", "Scikit-learn", "Claude API", "React", "Recharts"],
       type: "AI",
       github: "https://github.com/AbhishekSanthkumar/Ai-Monitoring",
+    },
+    {
+      id: 3,
+      title: "Neural Networks for Classification",
+      description:
+        "Designed and trained multi-layer neural networks for classification tasks across structured and unstructured datasets, achieving 15–25% performance gains through rigorous tuning.",
+      bullets: [
+        "Modeled multi-layer neural networks using Python and TensorFlow/Keras for classification across structured and unstructured datasets.",
+        "Improved model performance by ~15–25% through hyperparameter tuning (learning rate, batch size) and regularization techniques (L1/L2, dropout, early stopping).",
+        "Engineered robust evaluation pipelines using precision, recall, F1-score, and confusion matrices to ensure model generalization.",
+        "Reduced overfitting and improved validation stability by implementing cross-validation and learning curve analysis"],
+      stack: ["Python", "TensorFlow", "Keras", "Scikit-learn"],
+      type: "AI",
+      github: "#",
+    },
+    {
+      id: 4,
+      title: "Graph Neural Network — Social Network Analysis",
+      description:
+        "Applied graph-based ML to analyze large-scale social networks, implementing link prediction and community detection algorithms on sparse graph data.",
+      bullets: [
+        "Implemented link prediction algorithms: Jaccard Index, Adamic/Adar, and Degree Product.",
+        "Performed community detection using label propagation on real-world social graphs.",
+        "Analyzed homophily patterns to understand user clustering behavior.",
+      ],
+      stack: ["Python", "NetworkX", "Graph ML", "NumPy"],
+      type: "ML / Graph",
+      github: "#",
     },
   ],
 
