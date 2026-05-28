@@ -64,7 +64,7 @@ export const portfolioData = {
         "Engineered linear regression forecasting with R² confidence scoring to predict metric breach times; system correctly identified simulated DB connection exhaustion (168 → 305 connections) 1 hour in advance with 99% confidence.",
         "Integrated Claude Sonnet to correlate anomalies and forecasts across hosts, generating specific on-call alerts: 'db-01 connections will breach threshold in 1 hour check SHOW PROCESSLIST and prepare failover to db-02.'", 
       ],
-      stack: ["Python", "FastAPI", "Redis", "Scikit-learn", "Claude API", "React", "Recharts"],
+      stack: ["Python", "FastAPI", "Redis", "Scikit-learn", "Claude API", "React"],
       type: "AI",
       github: "https://github.com/AbhishekSanthkumar/Ai-Monitoring",
     },
