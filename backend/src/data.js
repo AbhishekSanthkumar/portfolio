@@ -139,7 +139,7 @@ experience: [
   {
     id: 1,
     role: "Product Engineer, Full Stack Developer",
-    type: "Full-time",
+    type: "Co-op & Full time",
     company: "SageOx",
     period: "Aug 2025 – Present",
     bullets: [
