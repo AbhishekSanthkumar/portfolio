@@ -68,7 +68,7 @@ export default function About({ hero, education }) {
           {/* Quick stat chips */}
           <div className="grid grid-cols-2 gap-4 mt-2">
             {[
-              { num: '3+', label: 'Years of experience' },
+              { num: '4+', label: 'Years of experience' },
               { num: '6+', label: 'Featured projects' },
               { num: '180+', label: 'Test cases automated' },
               { num: '2', label: 'Cloud platforms' },
