@@ -138,38 +138,37 @@ projects: [
 experience: [
   {
     id: 1,
-    role: "Product Engineer, Full Stack Developer",
-    type: "Co-op & Full time",
-    company: "SageOx",
-    period: "Aug 2025 – Present",
+    role: "Research Assistant",
+    type: "Part-time",
+    company: "University At Albany",
+    period: "Feb 2026 – May 2026",
     bullets: [
-      "Owned end-to-end delivery of full-stack features across web, desktop, and cloud layers, covering architecture, API design, UI implementation, and deployment.",
-      "Built and maintained services that connected distributed data sources into a unified context layer, enabling downstream tools to access and operate on shared application context.",
-      "Designed and shipped CLI and developer-tooling features integrated with cloud backends, supporting real-time synchronization across multiple developer sessions and machines.",
-      "Collaborated directly with founders and engineering leadership to translate ambiguous product requirements into scalable, production-ready features in a fast-paced startup environment.",
+      "Designed and built Python-based evaluation frameworks for academic NLP datasets, improving experiment reproducibility and cutting manual analysis time by ~40%.",
+      "Developed custom neural network architectures in PyTorch including multi-layer models with custom loss functions using DataLoader pipelines and autograd for gradient tracking across distributed training runs (torch.distributed).",
+      "Analyzed model performance across 5+ experimental configurations, surfacing insights that informed dataset selection and training decisions for faculty-led research.",
     ],
   },
 
   {
     id: 2,
-    role: "Full Stack Developer",
+    role: "Associate Engineer",
     type: "Full-time",
     company: "L&T Technology Services",
     period: "Jun 2023 – Jul 2024",
     bullets: [
-      "Designed, developed, and maintained full-stack web applications using React.js on the frontend and Java Spring Boot on the backend for enterprise engineering clients.",
-      "Built and integrated RESTful APIs and microservices to enable reliable communication between frontend applications and backend services.",
-      "Collaborated with cross-functional engineering teams to translate client requirements into technical specifications and production-ready software solutions.",
-      "Developed responsive and maintainable UI components using HTML, CSS, JavaScript, and React.js, improving application usability and performance.",
+      "Enhanced and maintained a Java-based test automation framework using the Page Object Model, improving test reusability across multiple product modules.",
+      "Developed and executed data-driven automated test suites using TestNG, Java Collections, and Excel/JSON parameterization, covering 200+ test scenarios and significantly reducing manual testing effort.",
+      "Contributed to automated test execution within the team's CI workflow, enabling faster feedback cycles, improving test coverage, and helping identify defects earlier in the development lifecycle.",
+      "Collaborated cross-functionally with 4 development squads to triage and resolve 80+ defects in Jira, maintaining traceability between requirements, test cases, and production releases.",
     ],
   },
 
   {
     id: 3,
     role: "Full Stack Developer",
-    type: "Full-time",
+    type: "Intern",
     company: "Thinq24 Innovations Pvt Ltd",
-    period: "Jan 2022 – Jun 2023",
+    period: "Dec 2022 - Jan 2023",
     bullets: [
       "Designed and developed scalable backend modules using Python and Django, building reusable components for client-facing production applications.",
       "Built and maintained RESTful APIs using Django REST Framework to enable reliable integration between backend services and frontend applications.",
